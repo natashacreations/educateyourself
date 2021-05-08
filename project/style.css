@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.navlist {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.rightNav {
+    width: 30%;
+    text-align: right;
+    padding: 0px 23px;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 26%;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: 2px 0;
+}
+
+.navlist li {
+    list-style-type: none;
+    padding: 26px 30px;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.navlist li a:hover {
+    color: gray;
+}
+
+#nick {
+    margin-left: 4%;
+    display: none;
+    width: 50%;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'comic sans serif';
+    margin: auto;
+    max-width: 50%;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('background.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.firstSection {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.firstHalf {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.secondHalf {
+    width: 30%;
+}
+
+.secondHalf img {
+    width: 80%;
+    border: 4px solid white;
+    border-radius: 150%;
+    margin: o auto;
+    display: block;
+}
+
+.text-big {
+    font-size: 38px;
+}
+
+.text-small {
+    font-size: 17px;
+}
+
+#btn {
+    width: 120px;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 3px 0;
+    background: gray;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+	text-align: center
+}
+
+.btn-sm {
+    vertical-align: middle;
+    padding: 6px 10px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: 'Roboto Slab', serif;
+    padding: 10px;
+}
+
+.paras {
+    padding: 0px 65px;
+}
+
+.section-left {
+    flex-direction: row-reverse;
+}
+
+.sectionSubTag {
+    font-family: 'Crimson Text', serif;
+}
+
+.thumbnail img {
+    width: 250px;
+}
+
+.sectionTag {
+    padding: 16px 0px;
+}
+
+.contact {
+    display: flex;
+    background-color: #f6f5f4;
+    /* height: 85vh; */
+    flex-direction: column;
+}
+
+#contactUsHeading {
+    text-align: center;
+}
+
+.text-align {
+    text-align: center;
+    font-family: 'Roboto Slab', serif
+}
+
+.form input {
+    margin: 18px;
+    padding: 10px;
+    border: 2px solid gray;
+    width: 52%;
+}
+
+.form {
+    margin: 15px auto;
+    max-width: 100%;
+}
+
+.text-footer {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 20px;
+    padding: 30px 0;
+    /* display: flex; */
+    /* justify-content: center; */
+    color: white;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+
+@media only screen and (max-width:1140px) {
+    .navlist {
+        flex-direction: column;
+    }
+    .navbar {
+        flex-direction: column;
+        height: 447px;
+        transition: all 0.7s ease-out;
+    }
+    .rightnav {
+        text-align: center;
+    }
+    #search {
+        width: 100%;
+    }
+    .btn-sm {
+        width: 60%;
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+    .burger {
+        display: block;
+    }
+    .h-nav-resp {
+        height: 72px;
+    }
+    .v-class-resp {
+        opacity: 0;
+    }
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .section {
+        flex-direction: column-reverse;
+    }
+    .text-big {
+        text-align: center;
+    }
+    .text-small {
+        text-align: center;
+    }
+    .btn {
+        text-align: center;
+    }
+    .paras {
+        text-align: center;
+        padding: 0px;
+    }
+}
